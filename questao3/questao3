@@ -14,7 +14,7 @@ class MyUserClass {
 
     if(!$dbconn){
        die("Connection failed: " . mysqli_connect_error());
-    }else     
+    }else{     
         $results = $dbconn->query('select name from user'); 
         
         sort($results); 
@@ -24,6 +24,6 @@ class MyUserClass {
         return $results;     
     } 
 
-
+}
  
 }
